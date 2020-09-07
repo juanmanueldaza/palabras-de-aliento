@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+    color: black;
+}
+
+
+
+body {
+    transition: all 200ms;
+    animation-name: fondo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fondo {
+    0% {
+        background-color: #cacaca;
+    }
+    50% {
+        background-color: antiquewhite;
+    }
+    100% {
+        background-color: #cacaca;
+    }
+}
+
+main {
+    transition: all 200ms;
+    box-sizing: border-box;
+    margin:auto;
+    padding:auto;
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width:90vw;
+    height: 90vh;
+    font-size: 1em;
+    animation-name: bardo;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+    text-shadow: aqua;
+
+}
+
+@keyframes bardo {
+    0% {
+        text-shadow: -1px -1px 3px black;
+        text-align: center;
+        font-style: italic;  
+    }
+    30% {
+        text-shadow: 1px 1px -3px black;
+        justify-content: start;
+        text-align: left;
+        font-style: normal;  
+    }
+    60% {
+        justify-content: end;
+        text-align: justify;
+        font-style: oblique;
+    }
+    100% {
+        text-shadow: -1px -1px 3px black;
+        font-synthesis: style; 
+    }
+}
+
+@keyframes latido {
+    0% {
+        line-height: 1em;
+        width:100vw;
+    }
+
+    5% {
+        letter-spacing: 1px;
+    }
+  
+    25% {
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        text-align: center;
+        text-decoration: overline;
+        
+    }
+    
+    33% {
+        letter-spacing: 3px;
+        text-decoration: line-through;
+    }
+    
+    38% {
+        letter-spacing: 0.5px;
+        text-decoration: underline;
+    }
+    50% {
+        letter-spacing: 4px;
+        text-transform: lowercase;
+        text-align: start;
+        line-height: 2em;
+        width:60vw;
+        text-decoration: overline;
+    }    
+    
+    60% {
+        letter-spacing: 2.3px;
+        text-decoration: line-through;
+    }
+    
+    75% {
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: underline;
+        
+    }
+
+    100% {
+        letter-spacing: 3px;
+        text-transform: lowercase;
+        text-align: end;
+        line-height: 1em;
+        width:100vw;
+        text-decoration: none;
+    }
+}
+
+
+a:hover {
+    transition: all 200ms;
+    background-color: black;
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 2em;
+    position: sticky;
+    top:auto;
+    bottom: auto;
+    left: auto;
+    right:auto;
+    animation-play-state: paused;
+    
+    
+}
+
+
+
+a {
+    transition: all 200ms;
+    text-decoration: none;
+    animation-name: latido;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    margin: auto;
+    padding: auto;
+    
+    
+}
+
+
+
